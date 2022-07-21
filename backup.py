@@ -25,9 +25,9 @@ except TypeError:
 
 ssh_open = paramiko.SSHClient()          # Representacion de una High-level session. 
 ssh_open.load_system_host_keys()
-ssh_open.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # When 1st connection, ask to trust this server or not                                                            # Change SSH key authentication as "Trust All". Add untrusted hosts
+ssh_open.set_missing_host_key_policy(paramiko.AutoAddPolicy())  
 
-ssh_open.connect(ip, puerto, user, passw)    # Initiate SSH connection with IP, Port, Username, Password     
+ssh_open.connect(ip, puerto, user, passw)        
 
 #FUNCION DONDE EMPIEZAN LOS COMANDOS QUE SE TIRAN SOBRE EL EQUIPO
 
